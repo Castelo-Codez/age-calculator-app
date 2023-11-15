@@ -114,7 +114,7 @@ function $calculateAge() {
     let otherDate = new Date();
     let year = otherDate.getFullYear() - birthDate.getFullYear();
     let $month = otherDate.getMonth() - birthDate.getMonth();
-    let $day = otherDate.getMonth() - birthDate.getMonth();
+    let $day = otherDate.getDate() - birthDate.getDate();
     if (otherDate.getDate() < birthDate.getDate()) {
         let $ay = otherDate.getDate() + 30;
         $day = $ay - birthDate.getDate();
