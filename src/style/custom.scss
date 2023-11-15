@@ -1,0 +1,25 @@
+li {
+    input {
+        width: 100%;
+        display: block;
+    }
+    &.error {
+        label {
+            color: red;
+        }
+        input {
+            border-color: red;
+        }
+        span {
+            opacity: 1;
+        }
+    }
+    &.valid {
+        input {
+            border-color: green;
+        }
+        span {
+            opacity: 0;
+        }
+    }
+}

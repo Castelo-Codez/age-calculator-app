@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="descrition" content="front end mentor age calculator app" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <title>Age calculator app</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body
+        class="min-h-screen bg-N-Lightgrey flex justify-center items-center p-2"
+    >
+        <div
+            class="w-[90%] relative md:w-[55%] mx-auto bg-N-White p-5 md:p-14 rounded-br-[150px] sm:rounedd-br-[280px]"
+        >
+            <form>
+                <ul
+                    role="list"
+                    class="flex justify-between md:justify-normal mb-5"
+                >
+                    <li
+                        class="w-flex-width-sm lg:w-flex-width-lg"
+                        role="listitem"
+                    >
+                        <label
+                            class="uppercase text-center md:text-left block text-[12px] mb-4 md:text-[18px] text-N-Smokeygrey tracking-[2px]"
+                            for="day"
+                            >day</label
+                        >
+                        <input
+                            class="md:w-[70%] lg:text-[25px] lg px-3 py-2 rounded-md border border-neutral-300 focus:outline-p-Purple"
+                            type="text"
+                            name="day"
+                        />
+                        <span
+                            class="text-[11px] text-red-600 opacity-0 mt-4"
+                        ></span>
+                    </li>
+                    <li
+                        class="w-flex-width-sm lg:w-flex-width-lg"
+                        role="listitem"
+                    >
+                        <label
+                            class="uppercase text-center md:text-left block text-[12px] mb-4 md:text-[18px] text-N-Smokeygrey tracking-[2px]"
+                            for="month"
+                            >month</label
+                        >
+                        <input
+                            class="md:w-[70%] lg:text-[25px] lg px-3 py-2 rounded-md border border-neutral-300 focus:outline-p-Purple"
+                            type="text"
+                            name="month"
+                        />
+                        <span
+                            class="text-[11px] text-red-600 opacity-0 mt-4"
+                        ></span>
+                    </li>
+                    <li
+                        class="w-flex-width-sm lg:w-flex-width-lg"
+                        role="listitem"
+                    >
+                        <label
+                            class="uppercase text-center md:text-left block text-[12px] mb-4 md:text-[18px] text-N-Smokeygrey tracking-[2px]"
+                            for="year"
+                            >year</label
+                        >
+                        <input
+                            class="md:w-[70%] lg:text-[25px] lg px-3 py-2 rounded-md border border-neutral-300 focus:outline-p-Purple"
+                            type="text"
+                            name="year"
+                        />
+                        <span
+                            class="text-[11px] text-red-600 opacity-0 mt-4"
+                        ></span>
+                    </li>
+                </ul>
+                <div
+                    class="relative flex justify-center items-center md:justify-end mb-16"
+                >
+                    <button
+                        role="button"
+                        class="bg-p-Purple w-fit relative z-10 rounded-full p-2 md:p-4"
+                    >
+                        <img
+                            src="./assets/images/icon-arrow.svg"
+                            alt="icon-arrow"
+                        />
+                    </button>
+                    <div
+                        class="absolute w-full h-[1px] bg-N-Lightgrey translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]"
+                    ></div>
+                </div>
+                <ul role="list">
+                    <li
+                        role="listitem"
+                        class="text-[40px] italic lg:text-[60px] font-[800]"
+                    >
+                        <span class="num text-p-Purple year">- -</span>
+                        years
+                    </li>
+                    <li
+                        role="listitem"
+                        class="text-[40px] italic lg:text-[60px] font-[800]"
+                    >
+                        <span class="num text-p-Purple month">- -</span>
+                        months
+                    </li>
+                    <li
+                        role="listitem"
+                        class="text-[40px] italic lg:text-[60px] font-[800]"
+                    >
+                        <span class="num text-p-Purple days">- -</span>
+                        days
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <script type="module" src="/src/js/main.js"></script>
+    </body>
+</html>
